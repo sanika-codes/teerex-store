@@ -1,0 +1,103 @@
+@use "../App";
+
+#cart-main {
+  form {
+    table {
+      width: 100%;
+      border-spacing : 20px;
+
+      thead,
+      tfoot {
+        background-color: App.$light-gray;
+        tr th {
+          padding: 20px;
+        }
+      }
+      td {
+        border: 0.5px solid App.$light-gray;
+        border-collapse: collapse;
+        padding: 20px;
+      }
+      td.product-name {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+          width: 80px;
+        }
+      }
+      td.delete {
+        border: none;
+        padding: 0;
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          background-color: App.$light-gray;
+        }
+        button:hover {
+          background-color: App.$red;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.quantity-controls {
+  position: relative;
+  display:flex;
+  justify-content: center;
+
+  .cart-button-quantity-control {
+    position: absolute;
+    top: 2px;
+    left: 90px;
+    z-index: 1;
+    cursor: pointer;
+    width: 6%;
+    text-align: center;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .--plus {
+    right: 90px;
+    left: auto;
+  }
+}
+
+.mobile #cart-main {
+  table{
+    border-spacing: 0;
+  }
+  td{
+    padding:10px
+  }
+  td.product-name {
+
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .quantity-controls input{
+    width:25px;
+  }
+  td.delete button{
+    font-size:10px;
+    
+  }
+}
+
+#notices p{
+  background-color: lightpink;
+  padding: 1% 2%;
+  color:black;
+}

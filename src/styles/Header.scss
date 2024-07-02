@@ -1,0 +1,33 @@
+@use "../App";
+
+header {
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid lightgray;
+
+  .menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color : App.$dark-gray
+    }
+    a:hover{
+        color: App.$red;
+      }
+  }
+}
+#cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 5px 10px;
+
+  svg{
+    height : 20px
+  }
+}

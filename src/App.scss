@@ -1,0 +1,49 @@
+$dark-gray : #484f56;
+$light-gray : #e5e5e5;
+$red : #da291c;
+
+.App {
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  font-size : 16px;
+  color: $dark-gray;
+
+  @media screen and (max-width : 767px){
+    font-size: 14px;
+  }
+}
+/* Font Styles */
+.small-heading{
+  text-transform: uppercase;
+  font-size : 14px;
+  font-weight : 600;
+  
+}
+.medium-heading{
+  font-size : 18px;
+  font-weight: 400px;
+  color : black;
+  @media screen and (max-width : 767px){
+    font-size: 16px;
+  }
+}
+
+main{
+  padding : 50px 20px;
+}
+#catalogue-main{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.mobile #catalogue-main{
+  grid-template-columns: 100%;
+}
+fieldset{
+  border : none;
+}
+.trex-button{
+  border-radius : 0;
+  border : 1px solid black;
+  padding : 2% 5%;
+  background-color: white;
+}

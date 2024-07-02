@@ -1,0 +1,41 @@
+.filter-button {
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.filterbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+
+  h3 {
+    width: 100%;
+  }
+
+  fieldset {
+    text-align: left;
+
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+
+.mobile .filterbar {
+  flex-direction: row;
+
+  div {
+    width: 100%;
+    display: flex;
+
+    h3{
+        width: 20%;
+        text-align: left;
+    }
+  }
+}
